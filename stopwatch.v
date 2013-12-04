@@ -23,8 +23,8 @@ module stopwatch(CLOCK_50, KEY, HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, HEX6, HEX7);
 	seven_segment_decoder seven_segment_decoder_tens(tens_bcd[3:0], HEX7[0:6]);
 	
 	//Turn the unused displays off
-	assign HEX3[0:6] = 7'b1111111;
-	assign HEX2[0:6] = 7'b1111111;
-	assign HEX1[0:6] = 7'b1111111;
-	assign HEX0[0:6] = 7'b1111111;
+	assign HEX3[0:6] = 7'b0100100;
+	assign HEX2[0:6] = 7'b0110000;
+	assign HEX1[0:6] = 7'b0110001;
+	assign HEX0[0:6] = 7'b0100100;
 endmodule
